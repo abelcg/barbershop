@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background: rgba(90, 90, 90, 0.5);
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin: 15px 20px;
+  transition: background 0.5s ease;
+}
+
+nav a:hover {
+  color: #afa27b;
+}
+
+#logo {
+  text-align: center;
+  width: 10%;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+}
+
+#portada {
+  background: rgba(90, 90, 90, 0.5);
+  background: url(../img/Barbershop.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#titulo {
+  border-bottom: 1px solid #fff;
+  width: 95%;
+  text-align: center;
+  margin: 10px 0;
+  padding: 25px;
+  font-size: 40px;
+}
+
+#portada h2 {
+  margin: 40px 0;
+}
+
+#portada button {
+  border: none;
+  padding: 20px 15px;
+  font-weight: 700;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+#portada button:hover {
+  background: #afa27b;
+  color: #fff;
+}
+
+.contenedor {
+  margin: 0 30px;
+  padding: 25px;
+  width: 50%;
+}
+
+.contenedor h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.contenedor hr {
+  margin: 15px 0;
+  max-width: 20%;
+}
+
+.contenedor h3 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.contenedor p {
+  line-height: 1.6;
+  text-align: justify;
+  margin: 25px 0;
+}
+
+.contenedor p::first-letter {
+  font-weight: 700;
+  font-size: 22px;
+  background: rgba(90, 90, 90, 0.5);
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.contenedor p::first-line {
+  font-weight: bold;
+}
+
+.contenedor a {
+  text-decoration: none;
+  background: #afa27b;
+  color: #fff;
+  padding: 15px 10px;
+  margin: 25px 0;
+  border-radius: 5%;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about > figure {
+  width: 50%;
+  position: relative;
+}
+
+.sillaBackground {
+  width: 30vw;
+  height: 50vh;
+  background: #afa27b;
+  position: absolute;
+  top: 0;
+  right: 150px;
+  z-index: -1;
+}
+
+.servicesContainer {
+  width: 100%;
+  height: 300px;
+  background: #282828;
+  margin-bottom: 30%;
+}
+
+.services {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  padding: 40px 0;
+  position: relative;
+}
+
+table {
+  margin: 0 auto;
+  padding: 25px;
+  border: 10px solid #afa27b;
+  background: #282828;
+  background: url(../img/table_bg.png);
+  background-position: center;
+  background-size: center;
+}
+
+td{
+    font-size: 30px;
+    border-bottom: 1px dashed #afa27b;
+}
+
+td:first-child {
+  padding: 15px 200px 15px 0px;
+}
+
+
+tr:nth-child(even) {
+  color: #afa27b;
+}
+
+tr:nth-child(odd) {
+  color: #fff;
+}
+
+#descuento td {
+    color: #fff;
+    font-size: 15px;
+}
+
+#descuento td ~ td{
+    color: rgb(235, 50, 50);
+    font-size: 20px;
+}
+
+footer{
+    background: #121212;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+footer section{
+    background: #121212;
+    color: white;
+    padding: 30px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a{
+    padding: 10px 0;
+    color: #afa27b;
+}
+
+.footer-links ~ div p{
+    padding: 10px 0;
+}
+
+/* estilo del boton fijo para tope de la página */
+#top {
+    width: 50px;
+    height: 50px;
+    background: rgba(90, 90, 90, 0.5);
+    border-radius: 10%;
+    padding: 10px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+  }
